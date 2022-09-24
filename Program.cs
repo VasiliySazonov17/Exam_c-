@@ -28,11 +28,13 @@ string[] FillArray(string[] row, string[] array)
     return array;
 }
 
-void PrintArray(string[] array)
+string PrintArray(string[] array)
 {
+    string output = string.Empty;
     for (int i = 0; i < array.Length; i++)
     {
         Console.Write($"{array[i]}");
+        output += ($"[{i + 1}]: {array[i]} \n");
         if (i < array.Length - 1)
         {
             Console.Write($", ");
@@ -43,10 +45,13 @@ void PrintArray(string[] array)
             Console.WriteLine();
         }
     }
+    return output;
 }
 
 
-string[] row = { "hello", "dormer", "toy shop", "toy", "heater", "pot", "ray", "root", "air", "people" };
-PrintArray(row);
+string[] row = { "hello", "dormer", "toy shop", "toy", "heater", "pot", "17", "to", "5", "ray", "root", "air", "people" };
+string input = PrintArray(row);
+File.WriteAllText("input.txt", input);
 string[] array = CreateSizeArray(row);
-PrintArray(FillArray(row, array));
+string output = PrintArray(FillArray(row, array));
+File.WriteAllText("output.txt", output);

@@ -1,0 +1,13 @@
+[1]: hello 
+[2]: dormer 
+[3]: toy shop 
+[4]: toy 
+[5]: heater 
+[6]: pot 
+[7]: 17 
+[8]: to 
+[9]: 5 
+[10]: ray 
+[11]: root 
+[12]: air 
+[13]: people 
