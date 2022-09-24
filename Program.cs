@@ -46,7 +46,7 @@ void PrintArray(string[] array)
 }
 
 
-string[] row = { "dormer", "toy shop", "toy", "heater", "pot", "ray", "root", "air" };
+string[] row = { "hello", "dormer", "toy shop", "toy", "heater", "pot", "ray", "root", "air", "people" };
 PrintArray(row);
 string[] array = CreateSizeArray(row);
 PrintArray(FillArray(row, array));
